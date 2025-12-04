@@ -1,34 +1,102 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.App {
+  min-height: 100vh;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.hero-glow {
+  background: radial-gradient(circle at center, rgba(34, 211, 238, 0.15) 0%, rgba(2, 6, 23, 0) 70%);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.neon-glow {
+  box-shadow: 0 0 20px -5px rgba(34, 211, 238, 0.3);
 }
 
-.App-link {
-    color: #61dafb;
+.neon-glow-hover:hover {
+  box-shadow: 0 0 30px -5px rgba(244, 114, 182, 0.4);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.noise-overlay {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzMzMiLz4KPC9zdmc+');
+  opacity: 0.03;
+}
+
+.gradient-border {
+  background: linear-gradient(45deg, #22d3ee, #f472b6);
+  padding: 2px;
+  border-radius: 1.5rem;
+}
+
+.gradient-border-inner {
+  background: #0f172a;
+  border-radius: calc(1.5rem - 2px);
+}
+
+.comic-sans {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px -5px rgba(34, 211, 238, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px -5px rgba(34, 211, 238, 0.6);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Timer styles */
+.timer-warning {
+  color: #facc15;
+}
+
+.timer-danger {
+  color: #f87171;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }

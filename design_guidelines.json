@@ -1,0 +1,132 @@
+{
+  "identity": {
+    "name": "BrainPath",
+    "persona": "E1: The Anti-AI Designer",
+    "aesthetic": "The Digital Chalkboard (Neo-Brutalist Playful)",
+    "core_philosophy": "Fusion of Nostalgia (Comic Sans) + Futurism (AI/Neon). Tension creates interest."
+  },
+  "typography": {
+    "primary_font": "Comic Sans MS, Comic Sans, cursive",
+    "secondary_font": "Comic Sans MS, Comic Sans, cursive",
+    "rationale": "Embracing the constraint. Comic Sans is the 'handwritten' element on the 'digital' blackboard. We treat it with extreme respect—massive sizing, tight tracking for headlines, and generous line-height for body.",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight",
+      "h2": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold",
+      "body": "text-base md:text-lg leading-relaxed",
+      "small": "text-sm font-medium tracking-wide uppercase"
+    }
+  },
+  "colors": {
+    "palette_name": "Neon Chalk on Slate",
+    "mode": "dark",
+    "backgrounds": {
+      "app_bg": "#020617",
+      "card_bg": "#0f172a",
+      "card_hover": "#1e293b",
+      "input_bg": "#1e293b"
+    },
+    "text": {
+      "primary": "#f8fafc",
+      "secondary": "#94a3b8",
+      "muted": "#64748b"
+    },
+    "accents": {
+      "primary_brand": "#22d3ee",
+      "secondary_brand": "#f472b6",
+      "success": "#a3e635",
+      "warning": "#facc15",
+      "error": "#f87171",
+      "highlight": "#c084fc"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(34, 211, 238, 0.15) 0%, rgba(2, 6, 23, 0) 70%)",
+      "card_border": "linear-gradient(45deg, #22d3ee, #f472b6)"
+    }
+  },
+  "visual_enhancers": {
+    "border_radius": {
+      "default": "rounded-3xl",
+      "card": "rounded-3xl",
+      "button": "rounded-full",
+      "input": "rounded-2xl"
+    },
+    "shadows": {
+      "glow": "0 0 20px -5px rgba(34, 211, 238, 0.3)",
+      "neon_hover": "0 0 30px -5px rgba(244, 114, 182, 0.4)"
+    },
+    "textures": {
+      "noise_overlay": "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzMzMiLz4KPC9zdmc+')",
+      "grid_pattern": "bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem]"
+    }
+  },
+  "layout_strategies": {
+    "container_padding": "p-6 md:p-12 lg:p-16",
+    "grid_system": "Bento Grid (Mode A: Tetris)",
+    "spacing_scale": "Relaxed. Use gap-8 or gap-12 between major sections.",
+    "alignment": "Left-aligned text for readability, Centered Hero for impact."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all duration-300 hover:scale-105",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border",
+      "ghost": "hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "style": "bg-card border border-border/50 hover:border-primary/50 transition-colors duration-300 relative overflow-hidden group",
+      "content_padding": "p-6 md:p-8"
+    },
+    "inputs": {
+      "style": "bg-input/50 border-transparent focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1627424921687-8a600e8434a7?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Abstract glowing neural network blue",
+      "usage": "Hero section background with heavy dark overlay (opacity 90%)"
+    },
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1629135310765-dcf5781f0ca3?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Abstract digital art blue and white",
+      "usage": "Split screen login page - Right side image"
+    },
+    "learning_concept": {
+      "url": "https://images.unsplash.com/photo-1501872516323-620289f2a3af?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Abstract flower glowing",
+      "usage": "Decorative element for 'Flowchart' technique card"
+    },
+    "video_concept": {
+      "url": "https://images.unsplash.com/photo-1682602370804-dabd5729f746?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Person watching screen dark room",
+      "usage": "Decorative element for 'Video' technique card"
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "STRICTLY use Comic Sans MS for all text. If not available, fallback to 'cursive'.",
+      "Implement the 'Digital Chalkboard' aesthetic: Dark backgrounds, bright neon accents, rounded corners.",
+      "Use the 'Bento Grid' layout for the Dashboard.",
+      "Ensure all interactive elements have hover states (glows, scale up).",
+      "Use 'sonner' for all notifications.",
+      "Use 'lucide-react' for icons."
+    ],
+    "specific_pages": {
+      "landing": "Hero section must use the 'hero_background' image with a heavy dark overlay. The headline 'BrainPath' should be massive (text-7xl) and glowing.",
+      "auth": "Use a split-screen layout. Left side: Form (Glassmorphism). Right side: 'login_background' image.",
+      "dashboard": "Use a Bento Grid. Top left: Welcome (Span 2). Top right: Stats (Span 1). Bottom: Topic Selection (Span 3).",
+      "learning_view": "Focus mode. Hide sidebar/distractions. Center the content (Passage/Video). Use large typography for readability."
+    },
+    "animations": [
+      "Add 'framer-motion' for page transitions (fade in, slide up).",
+      "Animate progress bars with a 'filling' effect.",
+      "Cards should hover-lift (-translate-y-1)."
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds, use solid dark colors with subtle noise textures.",
+    "Ensure contrast ratios are met (Neon on Dark is usually good, but check).",
+    "Add 'data-testid' to all interactive elements.",
+    "Use 'rounded-3xl' for a friendly, organic feel."
+  ]
+}
